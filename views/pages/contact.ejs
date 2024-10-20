@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../includes/head') %>
+  </head>
+  <body>
+    <%- include('../includes/header') %>
+
+    <div class="container" style="margin-top: 80px !important">
+      <div class="row justify-content-md-center mb-5">
+        <div class="col-md-12 mt-5">
+          <h2 class="text-center title">
+            Contact Us
+            <hr />
+          </h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center mb-5">
+        <div class="col-md-4 mb-5">
+          <h3 class="text-center">
+            Get in Touch
+            <hr />
+          </h3>
+          <form action="/contact" method="POST">
+            <div class="mb-3">
+              <label for="nombre" class="form-label"> Name </label>
+              <input type="text" name="nombre" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"> Email </label>
+              <input type="email" name="email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label"> Message </label>
+              <textarea name="mensaje" class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="d-grid gap-2 col-12 mx-auto mt-4 mb-4">
+              <button class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-8 py-3 custom_table">
+          <h3 class="text-center">
+            Our Contact Details
+            <hr />
+          </h3>
+          <p>
+            Feel free to reach out to us using the form, or contact us at:
+            <br />
+            Email: contact@company.com
+            <br />
+            Phone: +57 319 405 0XXX
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../includes/scripts') %>
+  </body>
+</html>
